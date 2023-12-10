@@ -1,0 +1,274 @@
+h1{
+  text-align: center;
+  font-family: fantasy;
+  font-variant: small-caps;
+  text-decoration-line: underline;
+  text-shadow: 15px 15px 15px ;
+  color:DodgerBlue;
+  letter-spacing: 5px;
+  font-size: 50px;
+  
+ }
+body{
+  cursor:none;
+  background-image:url(la-terre-pourrait-devenir-une-planete-morte-plus-vite-que-prevu-scaled_editedfgn.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  scrollbar-width: thin;
+  scrollbar-color: #007BFF transparent;
+  overflow-x: hidden;
+  overflow-y:visible;
+  height: fit-content;
+  
+}
+p{
+  color:LightSteelBlue;
+  font-family: fantasy;
+  text-align: center;
+  width: 500px;
+  height: 25px;
+  text-align:center;
+  margin-top:50px;
+}
+h2{
+  color:DarkSlateBlue;
+  font-family: Monospace;
+  text-align: left;
+  text-indent: 50px;
+  margin-top:350px;
+  font-size:20px;
+  font-variant: small-caps;
+  width: 400px;
+  height: 25px;
+  background-color:Plum;
+  border-radius: 75px;
+}
+img{
+  
+  
+  margin-top:-5px;
+  margin-left:-13px;
+}
+.cursor{
+  width: 20px;
+  height:20px;
+  border-radius: 35%;
+  position:absolute;
+  animation: Anim1 2.1s infinite alternate;
+  box-shadow: 0 0 20px purple,
+              0 0 60px purple,
+              0 0 100px purple;
+  pointer-events: none;
+  
+}
+.cursor::before{
+  content:'';
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:33px;
+  height:33px;
+  background:rgb(123, 20, 220);
+  border-radius: 50%;
+  opacity:0.2;
+  
+}
+.expand {
+  animation: Anim2 1s;
+  background: rgb(123, 20, 220);
+  border: 1px solid rgb(123, 20, 220);
+
+
+}
+@keyframes Anim1{
+  from {
+    transform: scale(1.5) rotate(0deg);
+  }
+  to {
+    transform: scale(0.5) rotate(180deg);
+  }
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+
+
+
+
+
+}
+@keyframes Anim2{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+    opacity:0;
+  }
+  
+}
+
+
+
+
+
+h6{
+  color: ivory;
+  font-family: Arial;
+  text-align: left;
+  text-indent: 50px;
+  margin-top:33px;
+  font-size:20px;
+  width: 1003px;
+  height: 25px;
+}
+b{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(166, 0, 255);
+  text-shadow: 5px 5px 5px;
+}
+h5{
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-style: wavy;
+  text-decoration-thickness: 25%;
+  text-align: center;
+  font-family: fantasy;
+  font-variant: small-caps;
+  text-decoration-line: overline;
+  text-shadow: 15px 15px 15px ;
+  color:rgb(171, 213, 255);
+  letter-spacing: 5px;
+  font-size: 75px;
+  margin-left: 23px;
+  
+}
+
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#scrollToTopBtn img {
+    width: 50px;
+    background: none;
+    border: none;
+}
+
+#scrollToTopBtn:hover {
+    opacity: 0.7;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3191ff;
+  border-radius: 500px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.center-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.styled-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #ff00f2;
+  color: #ff00f2;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, padding 0.3s;
+  align-items: center;
+  margin-top: -500px;
+}
+
+.styled-button:hover {
+  background-color: #ff00f2;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+.styled-button:active {
+  transform: scale(20);
+}
+.center-container2 {
+  margin-left: 20px;
+  margin-top: -466px;
+}
+.center-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  background-color: #666666; 
+  padding: 73px;
+  color: #333; 
+  margin-top: -400px;
+}
+
+div {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul, li {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+h3{
+  text-align: center;
+  color: #2c2c2c;
+  font-family: fantasy;
+  font-size: 20px;
+}
+h4{
+  text-align: center;
+
+
+}
